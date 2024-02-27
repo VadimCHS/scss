@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Lato;
+}
+
+.center {
+    padding-left: calc(50% - $withContent/2);
+    padding-right: calc(50% - $withContent/2);
+}
+
+.pink_text {
+    color: $colorTextAdditional;
+}

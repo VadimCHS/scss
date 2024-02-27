@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import '../var';
+@import '../global';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    background-color: $colorBackgroundHeaderFooter;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+
+    &__right {
+        display: flex;
+        gap: 33px;
+    }
+
+    &__svg:hover path {
+        fill: $colorHover;
+    }
+}
+
+.bread_crump {
+    background: rgb(248, 243, 244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__left {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &_item {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    height: 100%;
+    padding-top: 11px;
+    padding-bottom: 42px;
+    padding-left: calc(50% - 1600px/2);
+    padding-right: calc(50% - 1600px/2);
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        content: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        &:hover path {
+            fill: $colorHover;
+        }
+    }
+
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+        width: 12.4px;
+        height: 21.7px;
+    }
+}
+
+.description {
+    height: 662px;
+    display: flex;
+    justify-content: center;
+
+    .description_box {
+        position: absolute;
+        margin-top: -65px;
+        border: 1px solid rgb(234, 234, 234);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 64px 250px 64px 250px;
+        background-color: #FFF;
+        z-index: 1;
+
+        .heading {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 48px;
+
+            &__1 {
+                color: $colorTextAdditional;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 17px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            .delimiter1 {
+                width: 63px;
+                height: 3px;
+                background: $colorBorder;
+            }
+
+            &__2 {
+                color: rgb(77, 77, 77);
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 22px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+
+        &_p {
+            width: 555px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .price {
+            color: $colorTextAdditional;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 29px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-bottom: 64px;
+        }
+
+        .delimiter2 {
+            width: 642px;
+            border-top: 1px solid $colorBorder;
+            padding-bottom: 64px;
+        }
+
+        .fillter_product {
+            display: flex;
+            gap: 23px;
+            padding-bottom: 48px;
+
+            &__flex {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+            }
+
+            &__text {
+                color: rgb(111, 110, 110);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+            }
+        }
+        .button {
+            display: flex;
+            gap: 23px;
+            border: 1px solid $colorBorder;
+            color: #F16D7F;
+            padding: 14px 55px 9px 23px;
+            background-color: #FFF;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover path {
+                fill: #FFF;
+            }
+
+            &:hover {
+                background-color: $colorHover;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 63px;
+    padding-bottom: 128px;
+
+    &_content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-items: center;
+        gap: 30px;
+        padding-bottom: 48px;
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .cart_img {
+                z-index: -1;
+                object-fit: cover;
+            }
+            &_img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                &:hover {
+                    background-color: rgba(58, 56, 56, 0.86);
+                }
+        
+                .button_cart {
+                    display: none;
+                    &:hover path {
+                        fill: $colorHover;
+                    }
+                }
+        
+                &:hover .button_cart {
+                    display: flex;
+                    font-size: 16px;
+                    width: 212px;
+                    height: 48px;
+                    border: 1px solid #FFF;
+                    color: #FFF;
+                    background-color: rgba(0, 0, 0, 0);
+                    align-items: center;
+                    justify-content: center;
+                    gap: 11.04px;
+                    z-index: 1;
+                    position: absolute;
+                }
+                &:hover .button_cart:hover {
+                    border: 1px solid $colorHover;
+                    color: $colorHover;
+                }
+            }
+            &_text {
+                background-color: #F8F8F8;
+                padding-top: 24px;
+                padding-bottom: 24px;
+                padding-left: 16px;
+                padding-right: 28.8px;
+            }
+            &_title {
+                color: #000;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 12.65px;
+            }
+            &_paragraph {
+                color: #5D5D5D;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                margin-bottom: 18px;
+            }
+            &_price {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.footer {
+    
+    &_center {
+        display: flex;
+        align-items: center;
+        padding-top: 97px;
+        padding-bottom: 126px;
+        background-image: url(/html-scss/Seminar_10/img/backgroud_footer.png);
+        background-size: cover;
+        gap: 328px;
+        &_left {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            &_paragraph {
+                text-align: center;
+                max-width: 359px;
+                color: rgb(34, 34, 36);
+                font-family: Lato;
+                font-style: italic;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: center;
+            }
+        }
+        &_right {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+            &_text {
+                text-align: center;
+            }
+            &_input {
+                display: flex;
+                &_data {
+                    display: flex;
+                    align-items: center;
+                }
+                &_button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &_svg {
+                    position: relative;
+                }
+                &_paragraph_left {
+                    position: absolute;
+                    margin-left: 5px;
+                }
+                &_paragraph_right {
+                    position: absolute;
+                }
+            }
+        }
+    }
+    &_bot {
+        background-color: $colorBackgroundHeaderFooter;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &_year {
+            color: #FBFBFB;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &_icon {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 7.29px;
+            &_frame {
+                display: flex;
+                width: 32px;
+                height: 32px;
+                background-color: #FFF;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                &:hover {
+                    background-color: $colorHover;
+                }
+                &:hover path {
+                    fill: #FFF;
+                }
+            }
+            &_brand {
+                position: absolute;
+                z-index: 5;
+            }
+        
+        }
+    }
+}
