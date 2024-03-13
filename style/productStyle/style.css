@@ -4,6 +4,11 @@
   margin: 0;
   border: 0;
   font-family: Lato;
+  text-decoration: none;
+}
+
+summary {
+  display: block;
 }
 
 .center {
