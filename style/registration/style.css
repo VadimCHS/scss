@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Lato;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+summary {
+  display: block;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.pink_text {
+  color: #F16D7F;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  background-color: #222;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.header__right {
+  display: flex;
+  gap: 33px;
+}
+.header__svg:hover path {
+  fill: #F16D7F;
+}
+
+.bread_crump {
+  background: rgb(248, 243, 244);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.bread_crump__left {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.bread_crump__right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.bread_crump__right_item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  gap: 128px;
+}
+.registration_data {
+  width: 360px;
+}
+.registration_data .registration_input {
+  color: rgb(177, 177, 177);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 17px;
+  height: 45px;
+  border: 1px solid rgb(164, 164, 164);
+}
+.registration_data .name_hadding {
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration_data .name_info {
+  padding-bottom: 33px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration_data .name_info .gender {
+  display: flex;
+  gap: 20px;
+}
+.registration_data .name_info .gender .male {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration_data .name_info .gender .female {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration_data .login_info {
+  padding-bottom: 39px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 360px;
+}
+.registration_data .login_info .login_hadding {
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration_data .login_info .password_info {
+  color: rgb(177, 177, 177);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration_data .registration_button {
+  width: 167px;
+  height: 50px;
+  border: 1px solid #F16D7F;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  background-color: rgb(255, 255, 255);
+}
+.registration_data .registration_button:hover {
+  color: rgb(255, 255, 255);
+  background-color: #F16D7F;
+}
+.registration .loyalty {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.registration .loyalty_hadding {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration .loyalty_info {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration .loyalty_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration .loyalty_list_item {
+  display: flex;
+  gap: 23px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer_center {
+  display: flex;
+  align-items: center;
+  padding-top: 97px;
+  padding-bottom: 126px;
+  background-image: url("/img/backgroud_footer.png");
+  background-size: cover;
+  gap: 328px;
+}
+.footer_center_left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer_center_left_paragraph {
+  text-align: center;
+  max-width: 359px;
+  color: rgb(34, 34, 36);
+  font-family: Lato;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.footer_center_right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer_center_right_text {
+  text-align: center;
+}
+.footer_center_right_input {
+  display: flex;
+}
+.footer_center_right_input_data {
+  display: flex;
+  align-items: center;
+}
+.footer_center_right_input_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_center_right_input_svg {
+  position: relative;
+}
+.footer_center_right_input_paragraph_left {
+  position: absolute;
+  margin-left: 5px;
+}
+.footer_center_right_input_paragraph_right {
+  position: absolute;
+}
+.footer_bot {
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer_bot_year {
+  color: #FBFBFB;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer_bot_icon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 7.29px;
+}
+.footer_bot_icon_frame {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer_bot_icon_frame:hover {
+  background-color: #F16D7F;
+}
+.footer_bot_icon_frame:hover path {
+  fill: #FFF;
+}
+.footer_bot_icon_brand {
+  position: absolute;
+  z-index: 5;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 367.2905px);
+    padding-right: calc(50% - 367.2905px);
+  }
+  .registration {
+    gap: 22px;
+  }
+  .registration .loyalty_hadding {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .loyalty_info {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .loyalty_list_item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cart {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 0.15fr;
+  }
+  .cart_item_tablet {
+    grid-area: 3/2/2/2;
+    background: rgb(204, 23, 23);
+  }
+  .cart .shipping {
+    max-width: 360px;
+    max-height: 372px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-area: 4/1/5/1;
+  }
+  .cart .order {
+    grid-area: 3/2/2/2;
+    background: rgb(245, 243, 243);
+    max-height: 214px;
+    padding-left: 44px;
+    padding-right: 43px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  .footer_top {
+    flex-direction: column;
+  }
+  .footer_center {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 152.5px);
+    padding-right: calc(50% - 152.5px);
+  }
+  .display_none {
+    display: none;
+  }
+  .header__right {
+    flex-direction: row-reverse;
+  }
+  .bread_crump {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .registration {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .registration .loyalty_hadding {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .loyalty_info {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .loyalty_list_item {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .footer_top {
+    flex-direction: column;
+  }
+  .footer_center {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .footer_bot {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */

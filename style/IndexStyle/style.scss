@@ -100,9 +100,10 @@
 }
 
 .catalog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    text-align: center;
     padding-top: 63px;
     padding-bottom: 128px;
 
@@ -124,8 +125,10 @@
         margin-bottom: 48px;
     }
 
+    
     &_content {
         display: grid;
+        // grid-template-columns: repeat(auto-fit, 360px);
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         justify-items: center;
@@ -277,7 +280,7 @@
         align-items: center;
         padding-top: 97px;
         padding-bottom: 126px;
-        background-image: url('/html-scss/Seminar_10/img/backgroud_footer.png');
+        background-image: url('/img/backgroud_footer.png');
         background-size: cover;
         gap: 328px;
 
@@ -390,149 +393,5 @@
     }
 }
 
-
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .center {
-        padding-left: calc(50% - 734.581px/2);
-        padding-right: calc(50% - 734.581px/2);
-    }
-
-    .top_promo {
-        gap: 39px;
-    }
-
-    .img_promo {
-        width: 386px;
-        height: 368px;
-        flex-shrink: 0;
-    }
-
-    .top_promo_title {
-        font-size: 44px;
-    }
-
-    .top_promo_subtitle {
-        font-size: 24px;
-    }
-
-    .offer {
-        gap: 19.3px;
-    }
-
-    .offer_item_img {
-        width: 100%;
-    }
-
-    .catalog_title {
-        margin-bottom: 3.3px;
-    }
-
-    .catalog_subtitle {
-        margin-bottom: 73.74px;
-    }
-
-    .catalog_content {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 16px;
-        padding-bottom: 32.48px;
-    }
-
-
-    .footer_top {
-        flex-direction: column;
-        gap: 48px;
-    }
-
-    .footer_center_left {
-        margin-right: 0px;
-    }
-
-    .footer_center {
-        align-items: center;
-        flex-direction: column;
-        gap: 48px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-    .center {
-        padding-left: calc(50% - 305px/2);
-        padding-right: calc(50% - 305px/2);
-    }
-
-    .top_promo {
-        padding-top: 148px;
-        justify-content: center;
-    }
-
-    .display_none {
-        display: none;
-    }
-
-    .top_promo_right {
-        margin-bottom: 149px;
-    }
-
-    .top_promo_title {
-        font-size: 38px;
-    }
-
-    .top_promo_subtitle {
-        font-size: 20px;
-    }
-
-    .offer {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 0, 5fr);
-        gap: 30px;
-    }
-
-
-    .offer_item_big {
-        grid-area: auto;
-    }
-
-    .top_promo {
-        gap: 39px;
-        padding-left: calc(50% - 769.572px/2);
-        padding-right: calc(50% - 769.572px/2);
-    }
-
-    .offer_item_img {
-        width: 100%;
-    }
-
-    .catalog_content {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 16px;
-        padding-bottom: 32.48px;
-    }
-
-    .footer_top {
-        flex-direction: column;
-        gap: 48px;
-    }
-
-    .footer_center_left {
-        margin-right: 0px;
-    }
-
-    .footer_center {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        flex-direction: column;
-        gap: 48px;
-    }
-
-    
-
-    .footer_bot {
-        align-items: center;
-        flex-direction: column-reverse;
-        gap: 40px;
-    }
-}
+@import './tablet';
+@import './phone';

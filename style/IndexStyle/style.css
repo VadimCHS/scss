@@ -5,6 +5,7 @@
   border: 0;
   font-family: Lato;
   text-decoration: none;
+  list-style-type: none;
 }
 
 summary {
@@ -20,6 +21,18 @@ summary {
   color: #F16D7F;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -106,9 +119,7 @@ summary {
 }
 
 .catalog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding-top: 63px;
   padding-bottom: 128px;
 }
@@ -261,7 +272,7 @@ summary {
   align-items: center;
   padding-top: 97px;
   padding-bottom: 126px;
-  background-image: url("/html-scss/Seminar_10/img/backgroud_footer.png");
+  background-image: url("/img/backgroud_footer.png");
   background-size: cover;
   gap: 328px;
 }
@@ -363,7 +374,7 @@ summary {
   .top_promo {
     gap: 39px;
   }
-  .img_promo {
+  .top_promo .img_promo {
     width: 386px;
     height: 368px;
     flex-shrink: 0;
@@ -377,7 +388,7 @@ summary {
   .offer {
     gap: 19.3px;
   }
-  .offer_item_img {
+  .offer__item_img {
     width: 100%;
   }
   .catalog_title {
@@ -410,12 +421,15 @@ summary {
     padding-left: calc(50% - 152.5px);
     padding-right: calc(50% - 152.5px);
   }
-  .top_promo {
-    padding-top: 148px;
-    justify-content: center;
-  }
   .display_none {
     display: none;
+  }
+  .top_promo {
+    gap: 39px;
+    padding-left: calc(50% - 384.786px);
+    padding-right: calc(50% - 384.786px);
+    padding-top: 148px;
+    justify-content: center;
   }
   .top_promo_right {
     margin-bottom: 149px;
@@ -427,20 +441,14 @@ summary {
     font-size: 20px;
   }
   .offer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 0, 5fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
     gap: 30px;
   }
-  .offer_item_big {
+  .offer__item_big {
     grid-area: auto;
   }
-  .top_promo {
-    gap: 39px;
-    padding-left: calc(50% - 384.786px);
-    padding-right: calc(50% - 384.786px);
-  }
-  .offer_item_img {
+  .offer__item_img {
     width: 100%;
   }
   .catalog_content {

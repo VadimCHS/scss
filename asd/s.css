@@ -1,0 +1,99 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.i {
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
+}
+.i .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  gap: 12px;
+}
+.i .content .item {
+  height: 120px;
+  border: 1px solid red;
+}
+
+.catalog_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  justify-items: center;
+  gap: 30px;
+  padding-bottom: 48px;
+}
+.catalog_content_item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.catalog_content_item .cart_img {
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.catalog_content_item_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.catalog_content_item_img:hover {
+  background-color: rgba(58, 56, 56, 0.86);
+}
+.catalog_content_item_img .button_cart {
+  display: none;
+}
+.catalog_content_item_img .button_cart:hover path {
+  fill: red;
+}
+.catalog_content_item_img:hover .button_cart {
+  display: flex;
+  font-size: 16px;
+  width: 212px;
+  height: 48px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  gap: 11.04px;
+  z-index: 1;
+  position: absolute;
+}
+.catalog_content_item_img:hover .button_cart:hover {
+  border: 1px solid red;
+  color: red;
+}
+.catalog_content_item_text {
+  background-color: #F8F8F8;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 28.8px;
+}
+.catalog_content_item_title {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12.65px;
+}
+.catalog_content_item_paragraph {
+  color: #5D5D5D;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+.catalog_content_item_price {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=s.css.map */

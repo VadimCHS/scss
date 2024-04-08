@@ -4,6 +4,7 @@
     border: 0;
     font-family: Lato;
     text-decoration: none;
+    list-style-type: none;
 }
 
 summary {
@@ -18,3 +19,6 @@ summary {
 .pink_text {
     color: $colorTextAdditional;
 }
+
+@import './global_tablet';
+@import './global_phone';

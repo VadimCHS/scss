@@ -5,6 +5,7 @@
   border: 0;
   font-family: Lato;
   text-decoration: none;
+  list-style-type: none;
 }
 
 summary {
@@ -20,6 +21,18 @@ summary {
   color: #F16D7F;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -305,7 +318,7 @@ summary {
   align-items: center;
   padding-top: 97px;
   padding-bottom: 126px;
-  background-image: url(/html-scss/Seminar_10/img/backgroud_footer.png);
+  background-image: url("/img/backgroud_footer.png");
   background-size: cover;
   gap: 328px;
 }
@@ -397,4 +410,80 @@ summary {
 .footer_bot_icon_brand {
   position: absolute;
   z-index: 5;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 367.2905px);
+    padding-right: calc(50% - 367.2905px);
+  }
+  .catalog_content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .footer_top {
+    flex-direction: column;
+  }
+  .footer_center {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 152.5px);
+    padding-right: calc(50% - 152.5px);
+  }
+  .display_none {
+    display: none;
+  }
+  .header__right {
+    flex-direction: row-reverse;
+  }
+  .bread_crump {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .slide {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+  .slide .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  .description .description_box {
+    width: 326px;
+    margin-top: 0px;
+  }
+  .description .description_box_p {
+    width: 100%;
+    line-height: 143.1%;
+  }
+  .description .description_box .delimiter2 {
+    width: 174px;
+  }
+  .description .description_box .fillter_product__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .catalog_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer_top {
+    flex-direction: column;
+  }
+  .footer_center {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .footer_bot {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */

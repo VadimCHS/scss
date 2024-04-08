@@ -315,7 +315,7 @@
         align-items: center;
         padding-top: 97px;
         padding-bottom: 126px;
-        background-image: url(/html-scss/Seminar_10/img/backgroud_footer.png);
+        background-image: url('/img/backgroud_footer.png');
         background-size: cover;
         gap: 328px;
         &_left {
@@ -410,3 +410,6 @@
         }
     }
 }
+
+@import './tablet';
+@import './phone';
